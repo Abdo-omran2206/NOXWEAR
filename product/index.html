@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | NOXWEAR</title>
+    <meta name="description" content="Shop premium NOXWEAR streetwear. Explore product details, sizes, colors, and add to cart." />
+    <meta name="keywords" content="NOXWEAR, streetwear, product, Akira Omran" />
+    <meta name="author" content="Akira Omran" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <link rel="canonical" href="https://noxwear.com/product/index.html" />
+    <meta property="og:type" content="product" />
+    <meta property="og:site_name" content="NOXWEAR" />
+    <meta property="og:title" content="Product | NOXWEAR" />
+    <meta property="og:description" content="Shop premium NOXWEAR streetwear. Explore product details, sizes, colors, and add to cart." />
+    <meta property="og:url" content="https://noxwear.com/product/index.html" />
+    <meta property="og:image" content="https://noxwear.com/assets/banner.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Product | NOXWEAR" />
+    <meta name="twitter:description" content="Shop premium NOXWEAR streetwear." />
+    <meta name="twitter:image" content="https://noxwear.com/assets/banner.png" />
+    <link rel="icon" href="../assets/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../assets/logo.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <script type="application/ld+json" id="json-ld-product">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "brand": { "@type": "Brand", "name": "NOXWEAR" },
+        "manufacturer": { "@type": "Person", "name": "Akira Omran" }
+      }
+    </script>
+    <link rel="stylesheet" href="../style/shared.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav data-aos="fade-down" id="nav">
+      <div class="nav-container">
+        <a href="../index.html" style="text-decoration: none">
+          <h1>NOXWEAR</h1>
+        </a>
+        <div class="nav-content">
+          <div class="nav-links">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#Products">Products</a></li>
+              <li><a href="../index.html#WhyUs">About</a></li>
+              <li><a href="../index.html#Contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="cart-icon" id="cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i data-lucide="menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="drop-down-container" id="drop-down">
+        <ul class="drop-down">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#Products">Products</a></li>
+          <li><a href="../index.html#WhyUs">About</a></li>
+          <li><a href="../index.html#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <a href="../index.html">Home</a>
+      <i class="fa fa-angle-right"></i>
+      <a href="../index.html#Products">Products</a>
+      <i class="fa fa-angle-right"></i>
+      <span id="breadcrumb-name" style="color: var(--accent-green); font-weight: bold;"></span>
+    </header>
+
+    <main>
+      <section>
+        <div class="prev" data-aos="fade-in">
+          <div class="side-image" id="side-image"></div>
+          <div class="main-image-contener">
+            <img src="" alt="" id="main-image" class="main-image" loading="lazy"/>
+          </div>
+        </div>
+        <div class="information" data-aos="fade-out" data-aos-delay="100">
+          <h1 id="name"></h1>
+          <p id="price"></p>
+          <span id="description"></span>
+          
+          <div class="selection-group" id="sizes-group">
+            <h3>Select Size</h3>
+            <div id="sizes-continer" class="sizes-continer"></div>
+          </div>
+          
+          <div class="selection-group" id="colors-group">
+            <h3>Select Color</h3>
+            <div id="colors-continer" class="colors-continer"></div>
+          </div>
+          
+          <div class="button-continer">
+            <div class="counter">
+              <button onclick="handleCounter('negative')">
+                <i data-lucide="minus"></i>
+              </button>
+              <span id="counter">1</span>
+              <button onclick="handleCounter('plus')">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+            <button class="cart-button">
+              <i data-lucide="shopping-bag" style="width: 20px; height: 20px; margin-right: 0.5rem; vertical-align: middle;"></i>
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section brand-section">
+          <a href="../index.html" class="brand-logo">
+            <h1>NOXWEAR</h1>
+          </a>
+          <p class="brand-tagline">Own Your Vibe. <br />BREAK THE RULES.</p>
+          <div class="early-access-box">
+            <h3><i data-lucide="unlock"></i> Early Access Drops</h3>
+            <p>Join the inner circle. Get notified before anyone else.</p>
+            <a href="#" class="early-access-btn">Sign Up Now</a>
+          </div>
+        </div>
+
+        <div class="footer-section community-section">
+          <h2>Join The Community</h2>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fab fa-discord"></i><span>Discord Server</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-reddit-alien"></i><span>Subreddit</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section feed-section">
+          <h2>Instagram / TikTok feed</h2>
+          <div class="social-feed-grid">
+            <a href="#" class="feed-item mock-bg-1">
+              <div class="feed-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-2">
+              <div class="feed-overlay"><i class="fab fa-tiktok"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-3">
+              <div class="feed-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-4">
+              <div class="feed-overlay"><i class="fab fa-tiktok"></i></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section newsletter-section">
+          <h2>Newsletter</h2>
+          <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit"><i data-lucide="send"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr />
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 NOXWEAR. All rights reserved. Created by <a href="https://noxwear.com" rel="author">Akira Omran</a>.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      lucide.createIcons();
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+        offset: 100,
+        delay: 0,
+        anchorPlacement: "top-bottom",
+      });
+    </script>
+    <script src="../js/seo-config.js"></script>
+    <script src="../const/product.js"></script>
+    <script src="../js/add-cart-ui.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
