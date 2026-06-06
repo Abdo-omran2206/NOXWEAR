@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | NOXWEAR</title>
+    <meta name="description" content="Complete your NOXWEAR order. Secure checkout with Instapay and Vodafone Cash payment options." />
+    <meta name="keywords" content="NOXWEAR checkout, streetwear order, Akira Omran" />
+    <meta name="author" content="Akira Omran" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <link rel="canonical" href="https://noxwear.com/checkout/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NOXWEAR" />
+    <meta property="og:title" content="Checkout | NOXWEAR" />
+    <meta property="og:description" content="Complete your NOXWEAR streetwear order securely." />
+    <meta property="og:url" content="https://noxwear.com/checkout/index.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Checkout | NOXWEAR" />
+    <meta name="twitter:description" content="Complete your NOXWEAR streetwear order securely." />
+    <link rel="icon" href="../assets/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../assets/logo.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Checkout",
+        "description": "NOXWEAR secure checkout page",
+        "url": "https://noxwear.com/checkout/index.html",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "NOXWEAR",
+          "url": "https://noxwear.com/"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Akira Omran"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="../style/shared.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav data-aos="fade-down" id="nav">
+      <div class="nav-container">
+        <a href="../index.html" style="text-decoration: none"><h1>NOXWEAR</h1></a>
+        <div class="nav-content">
+          <div class="nav-links">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#Products">Products</a></li>
+              <li><a href="../index.html#WhyUs">About</a></li>
+              <li><a href="../index.html#Contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="cart-icon" id="cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i data-lucide="menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="drop-down-container" id="drop-down">
+        <ul class="drop-down">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#Products">Products</a></li>
+          <li><a href="../index.html#WhyUs">About</a></li>
+          <li><a href="../index.html#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="checkout-page">
+        <section class="order-summary" id="product-container" aria-labelledby="order-summary-heading">
+            <div class="section-header">
+                <h2 id="order-summary-heading">Order Summary</h2>
+                <p class="section-subtitle">Review your items before checkout</p>
+            </div>
+            <div id="cart-items" class="cart-items-grid"></div>
+            <div class="order-total">
+                <span>Total</span>
+                <span id="order-total" class="order-total-amount">$0.00</span>
+            </div>
+        </section>
+
+        <section class="checkout-form-section" aria-labelledby="checkout-form-heading">
+            <div class="section-header">
+                <h2 id="checkout-form-heading">Checkout</h2>
+                <p class="section-subtitle">Complete your order details</p>
+            </div>
+            <form id="checkout-form" class="checkout-form" novalidate>
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="01X XXXX XXXX" required autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+                </div>
+
+                <fieldset class="payment-fieldset">
+                    <legend>Select Payment Method</legend>
+                    <div class="payment-methods">
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="instapay" checked>
+                            <span class="payment-option-content">
+                                <i data-lucide="smartphone"></i>
+                                <span class="payment-option-name">Instapay</span>
+                            </span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="vodafone-cash">
+                            <span class="payment-option-content">
+                                <i data-lucide="wallet"></i>
+                                <span class="payment-option-name">Vodafone Cash</span>
+                            </span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div id="payment-number" class="payment-number-box">
+                  <div class="payment-number-header">
+                    <h3>Send Payment To</h3>
+                    <span id="payment-method-label" class="payment-method-label">Instapay</span>
+                  </div>
+                  <div class="payment-number-row">
+                    <p id="payment-number-value" class="payment-number-value">01234567891</p>
+                    <button type="button" id="copy-payment-number" class="copy-number-btn" aria-label="Copy payment number">
+                      <i data-lucide="copy"></i>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                  <p class="field-hint">Transfer the total amount to this number, then upload your screenshot below.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment-proof">Upload Payment Screenshot</label>
+                    <p class="field-hint">Attach a screenshot of your transfer confirmation.</p>
+                    <input type="file" id="payment-proof" name="paymentProof" required accept="image/*">
+                </div>
+
+                <button type="submit" class="submit-btn">Confirm Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section brand-section">
+          <a href="#Home" class="brand-logo">
+            <h1>NOXWEAR</h1>
+          </a>
+          <p class="brand-tagline">Own Your Vibe. <br />BREAK THE RULES.</p>
+          <div class="early-access-box">
+            <h3><i data-lucide="unlock"></i> Early Access Drops</h3>
+            <p>Join the inner circle. Get notified before anyone else.</p>
+            <a href="#" class="early-access-btn">Sign Up Now</a>
+          </div>
+        </div>
+
+        <div class="footer-section community-section">
+          <h2>Join The Community</h2>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fab fa-discord"></i><span>Discord Server</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-reddit-alien"></i><span>Subreddit</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section feed-section">
+          <h2>Instagram / TikTok feed</h2>
+          <div class="social-feed-grid">
+            <a href="#" class="feed-item mock-bg-1">
+              <div class="feed-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-2">
+              <div class="feed-overlay"><i class="fab fa-tiktok"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-3">
+              <div class="feed-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-4">
+              <div class="feed-overlay"><i class="fab fa-tiktok"></i></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section newsletter-section">
+          <h2>Newsletter</h2>
+          <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit"><i data-lucide="send"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr />
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 NOXWEAR. All rights reserved. Created by <a href="https://noxwear.com" rel="author">Akira Omran</a>.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      lucide.createIcons();
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out", 
+        once: true,
+        mirror: false,
+        offset: 100, 
+        delay: 0, 
+        anchorPlacement: "top-bottom", 
+      });
+    </script>
+    <script src="main.js"></script>
+    <script src="../js/add-cart-ui.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>
