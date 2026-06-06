@@ -96,12 +96,12 @@
               <li><a href="#Contact">Contact</a></li>
             </ul>
           </div>
-          <div class="cart-icon" id="cart-icon">
-            <i data-lucide="shopping-cart"></i>
-          </div>
-          <div class="menu-icon" onclick="toggleMenu()">
-            <i data-lucide="menu"></i>
-          </div>
+          <button class="cart-icon" id="cart-icon" type="button" aria-label="Open cart">
+            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+          </button>
+          <button class="menu-icon" onclick="toggleMenu()" type="button" aria-label="Toggle menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
       <div class="drop-down-container" id="drop-down">
@@ -121,15 +121,17 @@
         muted
         loop
         class="background"
-      ></video>
+      >
+        <track kind="captions" srclang="en" label="English captions" src="assets/0602.vtt">
+      </video>
       <div class="overlay"></div>
       <div class="hero-text" data-aos="fade-up">
         <h2>Own Your Vibe</h2>
         <h2>BREAK THE RULES</h2>
         <button>Shop Now</button>
       </div>
-      <a href="#Products" class="scroll-down">
-        <i data-lucide="arrow-down"></i>
+      <a href="#Products" class="scroll-down" aria-label="Scroll to products">
+        <i data-lucide="arrow-down" aria-hidden="true"></i>
       </a>
     </header>
 
@@ -183,6 +185,7 @@
           </div>
           <div class="map">
             <iframe
+              title="NOXWEAR location map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086441678714!2d-122.4194154846818!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b5b5b5%3A0x123456789abcdef0!2s123%20Fashion%20Street%2C%20Style%20City!5e0!3m2!1sen!2sus!4v1610000000000"
               width="100%"
               height="300"
@@ -216,7 +219,7 @@
       <div class="footer-content">
         <div class="footer-section brand-section">
           <a href="#Home" class="brand-logo">
-            <h1>NOXWEAR</h1>
+            <h2>NOXWEAR</h2>
           </a>
           <p class="brand-tagline">Own Your Vibe. <br />BREAK THE RULES.</p>
           <div class="early-access-box">
@@ -250,17 +253,17 @@
         <div class="footer-section feed-section">
           <h2>Instagram / TikTok feed</h2>
           <div class="social-feed-grid">
-            <a href="#" class="feed-item mock-bg-1">
-              <div class="feed-overlay"><i class="fab fa-instagram"></i></div>
+            <a href="#" class="feed-item mock-bg-1" aria-label="View Instagram post">
+              <div class="feed-overlay"><i class="fab fa-instagram" aria-hidden="true"></i></div>
             </a>
-            <a href="#" class="feed-item mock-bg-2">
-              <div class="feed-overlay"><i class="fab fa-tiktok"></i></div>
+            <a href="#" class="feed-item mock-bg-2" aria-label="View TikTok post">
+              <div class="feed-overlay"><i class="fab fa-tiktok" aria-hidden="true"></i></div>
             </a>
-            <a href="#" class="feed-item mock-bg-3">
-              <div class="feed-overlay"><i class="fab fa-instagram"></i></div>
+            <a href="#" class="feed-item mock-bg-3" aria-label="View Instagram post">
+              <div class="feed-overlay"><i class="fab fa-instagram" aria-hidden="true"></i></div>
             </a>
-            <a href="#" class="feed-item mock-bg-4">
-              <div class="feed-overlay"><i class="fab fa-tiktok"></i></div>
+            <a href="#" class="feed-item mock-bg-4" aria-label="View TikTok post">
+              <div class="feed-overlay"><i class="fab fa-tiktok" aria-hidden="true"></i></div>
             </a>
           </div>
         </div>
@@ -270,7 +273,7 @@
           <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
           <form class="newsletter-form">
             <input type="email" placeholder="Enter your email" required />
-            <button type="submit"><i data-lucide="send"></i></button>
+            <button type="submit" aria-label="Subscribe"><i data-lucide="send" aria-hidden="true"></i></button>
           </form>
         </div>
       </div>

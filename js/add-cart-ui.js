@@ -51,7 +51,7 @@ function showAddCartModal(productId) {
                   (color, idx) =>
                     `<button class="quick-add-color-box ${
                       idx === 0 ? "active" : ""
-                    }" data-color-name="${color.name}" data-color-code="${color.code}" style="background-color: ${color.code};" title="${color.name}"></button>`
+                    }" data-color-name="${color.name}" data-color-code="${color.code}" style="background-color: ${color.code};" title="${color.name}" aria-label="${color.name}"></button>`
                 )
                 .join("") : ""}
             </div>
@@ -59,12 +59,12 @@ function showAddCartModal(productId) {
 
           <div class="quick-add-action-row">
             <div class="quick-add-counter-box">
-              <button class="counter-btn minus-btn"><i class="fas fa-minus"></i></button>
+              <button class="counter-btn minus-btn" type="button" aria-label="Decrease quantity"><i class="fas fa-minus" aria-hidden="true"></i></button>
               <span class="counter-value">1</span>
-              <button class="counter-btn plus-btn"><i class="fas fa-plus"></i></button>
+              <button class="counter-btn plus-btn" type="button" aria-label="Increase quantity"><i class="fas fa-plus" aria-hidden="true"></i></button>
             </div>
-            <button class="quick-add-submit-btn">
-              <i class="fas fa-shopping-bag"></i> Add To Cart
+            <button class="quick-add-submit-btn" type="button">
+              <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add To Cart
             </button>
           </div>
         </div>
