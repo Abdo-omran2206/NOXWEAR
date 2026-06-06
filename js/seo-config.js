@@ -1,5 +1,5 @@
 const SEO_CONFIG = {
-  siteUrl: "https://noxwear.com",
+  siteUrl: "https://abdo-omran2206.github.io/NOXWEAR",
   siteName: "NOXWEAR",
   author: "Akira Omran",
   locale: "en_US",

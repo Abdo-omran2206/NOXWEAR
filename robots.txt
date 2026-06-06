@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /checkout/
 
-Sitemap: https://noxwear.com/sitemap.xml
+Sitemap: https://abdo-omran2206.github.io/NOXWEAR/sitemap.xml
