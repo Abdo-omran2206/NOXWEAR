@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOXWEAR | Own Your Vibe — Gen Z Streetwear</title>
+    <meta name="description" content="NOXWEAR is a Gen Z streetwear brand by Akira Omran. Shop bold hoodies, cargo fits, and technical sets. Own your vibe. Break the rules." />
+    <meta name="keywords" content="NOXWEAR, streetwear, Gen Z fashion, hoodies, cargo pants, athleisure, urban wear, Akira Omran" />
+    <meta name="author" content="Akira Omran" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <link rel="canonical" href="https://noxwear.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NOXWEAR" />
+    <meta property="og:title" content="NOXWEAR | Own Your Vibe — Gen Z Streetwear" />
+    <meta property="og:description" content="Shop bold Gen Z streetwear from NOXWEAR. Premium hoodies, cargo fits, and limited drops by Akira Omran." />
+    <meta property="og:url" content="https://noxwear.com/" />
+    <meta property="og:image" content="https://noxwear.com/assets/banner.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NOXWEAR | Own Your Vibe — Gen Z Streetwear" />
+    <meta name="twitter:description" content="Shop bold Gen Z streetwear from NOXWEAR. Premium hoodies, cargo fits, and limited drops." />
+    <meta name="twitter:image" content="https://noxwear.com/assets/banner.png" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://noxwear.com/#organization",
+            "name": "NOXWEAR",
+            "url": "https://noxwear.com/",
+            "logo": "https://noxwear.com/assets/logo.png",
+            "description": "Gen Z streetwear brand offering bold hoodies, cargo fits, and technical athleisure.",
+            "email": "info@noxwear.com",
+            "founder": {
+              "@type": "Person",
+              "name": "Akira Omran"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://noxwear.com/#website",
+            "url": "https://noxwear.com/",
+            "name": "NOXWEAR",
+            "description": "Own Your Vibe. BREAK THE RULES.",
+            "publisher": { "@id": "https://noxwear.com/#organization" },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "ClothingStore",
+            "@id": "https://noxwear.com/#store",
+            "name": "NOXWEAR",
+            "url": "https://noxwear.com/",
+            "image": "https://noxwear.com/assets/banner.png",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "123 Fashion Street",
+              "addressLocality": "Style City"
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Akira Omran"
+            }
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="style/shared.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+
+    <nav data-aos="fade-down" id="nav" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="index.html" style="text-decoration: none"><h1>NOXWEAR</h1></a>
+        <div class="nav-content">
+          <div class="nav-links">
+            <ul>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Products">Products</a></li>
+              <li><a href="#WhyUs">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="cart-icon" id="cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i data-lucide="menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="drop-down-container" id="drop-down">
+        <ul class="drop-down">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Products">Products</a></li>
+          <li><a href="#WhyUs">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="Home" role="banner">
+      <video
+        src="assets/0602.mp4"
+        autoplay
+        muted
+        loop
+        class="background"
+      ></video>
+      <div class="overlay"></div>
+      <div class="hero-text" data-aos="fade-up">
+        <h2>Own Your Vibe</h2>
+        <h2>BREAK THE RULES</h2>
+        <button>Shop Now</button>
+      </div>
+      <a href="#Products" class="scroll-down">
+        <i data-lucide="arrow-down"></i>
+      </a>
+    </header>
+
+    <main>
+      <section id="Products" aria-labelledby="products-heading">
+        <h2 id="products-heading" data-aos="fade-up">Our Products</h2>
+        <div class="product-grid"></div>
+      </section>
+
+      <section class="why-us" id="WhyUs">
+        <h2 data-aos="fade-up">Why NOXWEAR?</h2>
+        <div class="icon-grid" data-aos="zoom-in">
+          <div class="icon-card">
+            <i data-lucide="shield-check"></i>
+            <p>Quality Assurance</p>
+            <p>
+              All our products undergo rigorous testing to ensure durability and
+              performance.
+            </p>
+          </div>
+          <div class="icon-card">
+            <i data-lucide="sparkles"></i>
+            <p>Innovative Design</p>
+            <p>
+              Our designs combine functionality with aesthetic appeal for a
+              unique look.
+            </p>
+          </div>
+          <div class="icon-card">
+            <i data-lucide="tag"></i>
+            <p>Affordable Prices</p>
+            <p>We offer competitive pricing without compromising on quality.</p>
+          </div>
+          <div class="icon-card">
+            <i data-lucide="truck"></i>
+            <p>Fast Shipping</p>
+            <p>Enjoy quick and reliable delivery to your doorstep.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="Contact" id="Contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Visit Us</h3>
+            <p>123 Fashion Street, Style City</p>
+            <p>Mon - Fri: 9am - 6pm</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@noxwear.com</p>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086441678714!2d-122.4194154846818!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b5b5b5%3A0x123456789abcdef0!2s123%20Fashion%20Street%2C%20Style%20City!5e0!3m2!1sen!2sus!4v1610000000000"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="contact-form-section">
+            <h3>Send Us a Message</h3>
+            <p>
+              Have questions or feedback? Fill out the form below and we'll get
+              back to you as soon as possible.
+            </p>
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea
+                placeholder="Your Message"
+                required
+                style="resize: vertical"
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section brand-section">
+          <a href="#Home" class="brand-logo">
+            <h1>NOXWEAR</h1>
+          </a>
+          <p class="brand-tagline">Own Your Vibe. <br />BREAK THE RULES.</p>
+          <div class="early-access-box">
+            <h3><i data-lucide="unlock"></i> Early Access Drops</h3>
+            <p>Join the inner circle. Get notified before anyone else.</p>
+            <a href="#" class="early-access-btn">Sign Up Now</a>
+          </div>
+        </div>
+
+        <div class="footer-section community-section">
+          <h2>Join The Community</h2>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fab fa-discord"></i><span>Discord Server</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-reddit-alien"></i><span>Subreddit</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section feed-section">
+          <h2>Instagram / TikTok feed</h2>
+          <div class="social-feed-grid">
+            <a href="#" class="feed-item mock-bg-1">
+              <div class="feed-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-2">
+              <div class="feed-overlay"><i class="fab fa-tiktok"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-3">
+              <div class="feed-overlay"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="#" class="feed-item mock-bg-4">
+              <div class="feed-overlay"><i class="fab fa-tiktok"></i></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section newsletter-section">
+          <h2>Newsletter</h2>
+          <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit"><i data-lucide="send"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr />
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 NOXWEAR. All rights reserved. Created by <a href="https://noxwear.com" rel="author">Akira Omran</a>.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      lucide.createIcons();
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out", 
+        once: true,
+        mirror: false,
+        offset: 100, 
+        delay: 0, 
+        anchorPlacement: "top-bottom", 
+      });
+    </script>
+    <script src="js/seo-config.js"></script>
+    <script src="const/product.js"></script>
+    <script src="js/add-cart-ui.js"></script>
+    <script src="main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
