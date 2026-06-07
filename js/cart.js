@@ -35,7 +35,7 @@ document.getElementById("cart-icon").addEventListener("click", () => {
     `,
   }).then((result) => {
     if (result.isConfirmed) {
-      window.location.href = "../checkout/index.html";
+      window.location.href = formatPagePath("checkout/index.html");
     }
   });
 });
@@ -62,15 +62,25 @@ function renderElement(data) {
 
 function formatImageSrc(path) {
   if (!path) return "";
-  if (/^https?:\/\//i.test(path)) return path;
 
-  const isGitHub = window.location.hostname.includes("github.io");
-  const repoPrefix = isGitHub ? "/NOXWEAR" : "";
+  const inSubfolder = window.location.pathname.includes("/checkout") || window.location.pathname.includes("/product");
 
-  // Normalize path: strip leading ../, ./ and any leading slashes
-  const normalized = path.replace(/^(?:\.\/|\.\.\/)+/, "").replace(/^\/+/, "");
+  if (inSubfolder) {
+    return `../${path}`
+  }
+  return path
+}
 
-  return `${repoPrefix}/${normalized}`;
+function formatPagePath(path) {
+  if (!path) return "";
+
+  const inSubfolder = window.location.pathname.includes("/checkout") || window.location.pathname.includes("/product");
+
+  if (inSubfolder) {
+    return `../${path}`
+  }
+  return path
+
 }
 
 function cancelOrder(idx) {
