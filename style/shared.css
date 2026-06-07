@@ -8,6 +8,9 @@
   --accent-purple: #8b5cf6;
   --text-main: #ffffff;
   --text-secondary: #a1a1aa;
+  --main-font:"Trade Winds", system-ui;
+  --secondary-font:"Racing Sans One", sans-serif;
+
 }
 
 /* ==========================================
@@ -27,6 +30,10 @@ body {
   scroll-behavior: smooth;
 }
 
+h1 ,h2 ,h3{
+  font-family: var(--main-font);
+}
+
 /* ==========================================
    Navigation Bar (Shared Styles)
    ========================================== */
@@ -34,6 +41,7 @@ nav h1 {
   margin: 0;
   color: var(--text-main);
   font-size: clamp(1.25rem, 2vw + 1rem, 2rem);
+  font-family: var(--main-font);
   cursor: pointer;
   background: linear-gradient(to right, var(--text-main), var(--accent-purple));
   -webkit-background-clip: text;

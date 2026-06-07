@@ -60,11 +60,13 @@ header .overlay {
   font-size: clamp(1.25rem, 2.5vw + 1rem, 1.75rem);
   font-weight: bold;
   color: var(--text-main);
+  font-family: var(--secondary-font);
+  
 }
 .hero-text h3 {
   font-size: clamp(2rem, 2vw + 1rem, 3rem);
   margin: 0;
-  letter-spacing: 4px;
+  letter-spacing: 10px;
 }
 .hero-text h2 {
   font-size: clamp(1.7rem, 2vw + 1rem, 3rem);
