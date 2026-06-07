@@ -2,11 +2,11 @@ const Products = [
   {
     id: 1,
     name: "Neon Drift Set",
-    image: "assets/Products/neon-drift-set/main.png",
+    image: "assets/Products/neon-drift-set/main.jpg",
     gallery: [
-      "assets/Products/neon-drift-set/main.png",
-      "assets/Products/neon-drift-set/gallery-1.png",
-      "assets/Products/neon-drift-set/gallery-2.png",
+      "assets/Products/neon-drift-set/main.jpg",
+      "assets/Products/neon-drift-set/gallery-1.jpg",
+      "assets/Products/neon-drift-set/gallery-2.jpg",
     ],
     description:
       "A futuristic lightweight streetwear set engineered with breathable technical fabrics, signature purple neon details, and a relaxed modern fit. Perfect for high-energy city drifting.",
@@ -22,11 +22,11 @@ const Products = [
   {
     id: 2,
     name: "Shadow Core Hoodie",
-    image: "assets/Products/shadow-core-hoodie/main.png",
+    image: "assets/Products/shadow-core-hoodie/main.jpg",
     gallery: [
-      "assets/Products/shadow-core-hoodie/main.png",
-      "assets/Products/shadow-core-hoodie/gallery-1.png",
-      "assets/Products/shadow-core-hoodie/gallery-2.png",
+      "assets/Products/shadow-core-hoodie/main.jpg",
+      "assets/Products/shadow-core-hoodie/gallery-1.jpg",
+      "assets/Products/shadow-core-hoodie/gallery-2.jpg",
     ],
     description:
       "Crafted from heavy-duty 450GSM cotton, this shadow hoodie features clean crop lines, an oversized hood, and subtle back-embossed graphic details. Bold design meets everyday comfort.",
@@ -42,11 +42,11 @@ const Products = [
   {
     id: 3,
     name: "Midnight Flow Set",
-    image: "assets/Products/midnight-flow-set/main.png",
+    image: "assets/Products/midnight-flow-set/main.jpg",
     gallery: [
-      "assets/Products/midnight-flow-set/main.png",
-      "assets/Products/midnight-flow-set/gallery-1.png",
-      "assets/Products/midnight-flow-set/gallery-2.png",
+      "assets/Products/midnight-flow-set/main.jpg",
+      "assets/Products/midnight-flow-set/gallery-1.jpg",
+      "assets/Products/midnight-flow-set/gallery-2.jpg",
     ],
     description:
       "A premium two-piece athleisure set with a sleek midnight blue finish, ergonomic tailoring, and ultra-soft double-knit jersey fabric. Tailored for absolute style and mobility.",
@@ -62,11 +62,11 @@ const Products = [
   {
     id: 4,
     name: "Offgrid Cargo Fit",
-    image: "assets/Products/offgrid-cargo-fit/main.png",
+    image: "assets/Products/offgrid-cargo-fit/main.jpg",
     gallery: [
-      "assets/Products/offgrid-cargo-fit/main.png",
-      "assets/Products/offgrid-cargo-fit/gallery-1.png",
-      "assets/Products/offgrid-cargo-fit/gallery-2.png",
+      "assets/Products/offgrid-cargo-fit/main.jpg",
+      "assets/Products/offgrid-cargo-fit/gallery-1.jpg",
+      "assets/Products/offgrid-cargo-fit/gallery-2.jpg",
     ],
     description:
       "An industrial-inspired utility fit featuring modular multi-strap cargo pockets, neon green accents, and heavy canvas construction. Built for the off-grid explorer.",
@@ -82,12 +82,12 @@ const Products = [
   {
     id: 5,
     name: "Urban Pulse Pants",
-    image: "assets/Products/urban-pulse-pants/main.png",
+    image: "assets/Products/urban-pulse-pants/main.jpg",
     gallery: [
-      "assets/Products/urban-pulse-pants/main.png",
-      "assets/Products/urban-pulse-pants/gallery-1.png",
-      "assets/Products/urban-pulse-pants/gallery-2.png",
-      "assets/Products/urban-pulse-pants/gallery-3.png",
+      "assets/Products/urban-pulse-pants/main.jpg",
+      "assets/Products/urban-pulse-pants/gallery-1.jpg",
+      "assets/Products/urban-pulse-pants/gallery-2.jpg",
+      "assets/Products/urban-pulse-pants/gallery-3.jpg",
     ],
     description:
       "Modern loose-fit cargo pants built with durable beige cotton ripstop, adjustable ankle toggles, and multiple secure utility pockets for high-functioning everyday wear.",
@@ -103,11 +103,11 @@ const Products = [
   {
     id: 6,
     name: "Voltage Stripe Set",
-    image: "assets/Products/voltage-stripe-set/main.png",
+    image: "assets/Products/voltage-stripe-set/main.jpg",
     gallery: [
-      "assets/Products/voltage-stripe-set/main.png",
-      "assets/Products/voltage-stripe-set/gallery-1.png",
-      "assets/Products/voltage-stripe-set/gallery-2.png",
+      "assets/Products/voltage-stripe-set/main.jpg",
+      "assets/Products/voltage-stripe-set/gallery-1.jpg",
+      "assets/Products/voltage-stripe-set/gallery-2.jpg",
     ],
     description:
       "A high-contrast activewear set highlighting bold electrical striping down the sleeves and legs. Constructed from moisture-wicking technical blend for superior performance.",
@@ -123,11 +123,11 @@ const Products = [
   {
     id: 7,
     name: "Stealth Cargo Pants",
-    image: "assets/Products/stealth-cargo-pants/main.png",
+    image: "assets/Products/stealth-cargo-pants/main.jpg",
     gallery: [
-      "assets/Products/stealth-cargo-pants/main.png",
-      "assets/Products/stealth-cargo-pants/gallery-1.png",
-      "assets/Products/stealth-cargo-pants/gallery-2.png",
+      "assets/Products/stealth-cargo-pants/main.jpg",
+      "assets/Products/stealth-cargo-pants/gallery-1.jpg",
+      "assets/Products/stealth-cargo-pants/gallery-2.jpg",
     ],
     description:
       "Tactical black cargo pants engineered with water-resistant fabric, reinforced stitching, and a tapered aesthetic that blends seamlessly into any techwear layout.",
