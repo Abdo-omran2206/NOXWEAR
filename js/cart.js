@@ -63,7 +63,14 @@ function renderElement(data) {
 function formatImageSrc(path) {
   if (!path) return "";
   if (/^https?:\/\//i.test(path)) return path;
-  return path.startsWith("/") ? path : `/${path.replace(/^\/+/, "")}`;
+
+  const isGitHub = window.location.hostname.includes("github.io");
+  const repoPrefix = isGitHub ? "/NOXWEAR" : "";
+
+  // Normalize path: strip leading ../, ./ and any leading slashes
+  const normalized = path.replace(/^(?:\.\/|\.\.\/)+/, "").replace(/^\/+/, "");
+
+  return `${repoPrefix}/${normalized}`;
 }
 
 function cancelOrder(idx) {
