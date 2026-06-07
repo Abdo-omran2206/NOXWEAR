@@ -44,7 +44,7 @@ function renderElement(data) {
   return data
     .map((product, idx) => `
       <li class="cart-product-card">
-        <img src="../${product.image}" alt="${product.name}" loading="lazy"/>
+        <img src="${formatImageSrc(product.image)}" alt="${product.name}" loading="lazy"/>
         <div class="cart-product-details">
           <h4>Name: ${product.name}</h4>
           <p>Price: $${product.price}</p>
@@ -58,6 +58,12 @@ function renderElement(data) {
       </li>
     `)
     .join("");
+}
+
+function formatImageSrc(path) {
+  if (!path) return "";
+  if (/^https?:\/\//i.test(path)) return path;
+  return path.startsWith("/") ? path : `/${path.replace(/^\/+/, "")}`;
 }
 
 function cancelOrder(idx) {

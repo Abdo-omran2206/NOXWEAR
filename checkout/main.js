@@ -60,9 +60,9 @@ function renderCartItems() {
   orderTotalEl.textContent = `$${total.toFixed(2)}`;
 }
 
-const GOFILE_TOKEN = "VrphQrUPvKTAVHxVFlUyd8ab9rhciXrl";
+const GOFILE_TOKEN = "";
 // Use /exec (deployed web app), not /dev — /dev blocks cross-origin requests from localhost
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyn5T7tt8Wpz3NuHCDo3FPHqbezQnL6S1UYgiG_-Ptadsop0F7p926eeEDlYN9_Zlrl/exec";
+const SCRIPT_URL = "";
 
 function getCartTotal(cart) {
   return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
